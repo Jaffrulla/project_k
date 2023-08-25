@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Login</title>
+  <link rel="stylesheet" href="../css/res_login.css">
+  <script type="text/javascript" src="../js/res_login.js"></script>
+
+</head>
+<body>
+<div class="bg">
+  
+<div class="container">
+  <h1 id="heading">Restaurant Login</h1>
+<form action="../php/res_login.php" method="post" onsubmit="return constraint_check()">
+  <div class="form-field">
+    <input type="number" placeholder="Mobile Number" name="mobile" id="mobile" value="" required/>
+    <br><span id="mob_missing" class="err_msg"></span><br>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" name="password" id="password" value="" required/>      
+    <button class="button-password" name="show" type="button" onclick="return passwordvisible()">
+      <span id="hide">show</span>
+    </button>         
+    <span id="pass_missing" class="err_msg"></span><br>
+  </div>
+    
+  
+  <div class="form-field">
+    <button class="btn" type="submit" name="submit" value="Submit">Log in</button>
+  </div>
+  <div>
+  <p class="para">Not a verified Restaurant? <span><a href="res_reg.html">Register Here</a></span></p>
+  </div>
+  <div>
+    <p class = "para">Login as User?  <span><a href="login.html">Login here</a></span></p>
+  </div>
+</form>
+</div>
+</div>
+
+
+  
+</body>
+</html>

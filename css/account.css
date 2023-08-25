@@ -1,0 +1,293 @@
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+    border-radius: 15px;
+}
+body{
+    background-image: url(images/bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0 10;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #15ff00;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: #3ef15c;
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 2%;
+    width: max-content;
+    margin-left: 35%;
+    backdrop-filter: blur(10px) brightness(130%); 
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+    box-shadow: 0 0px 5px 2px rgba(255, 255, 255, 0.932);
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 50%;
+    padding: 1.5%;
+    opacity: 0.9;
+    transition: ease-out 0.3s;
+}
+.logo:hover{
+    opacity: 1;
+     -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: ease 0.3s;
+  background-color: rgba(255, 255, 255);
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+    text-align: right;
+    
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.466);
+    box-shadow: 0 0px 2px 2px rgba(255, 255, 255, 0.932);
+    border-radius: 9px;
+    margin: 2.5mm;
+    font-size: large;
+}
+.menu ul li:hover{
+    opacity: 1;
+     -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: ease 0.3s;
+  background-color: rgba(13, 75, 94, 0.938);
+}
+
+.acc_info{
+    text-align: center;
+    align-items:center  ;
+    color: whitesmoke;
+    min-width: fit-content;
+    margin-left: 70%;
+    min-height: fit-content;
+    border-radius: 30px;
+    transition: ease 0.3s;
+}
+
+.acc_info h3{
+    margin-bottom: -30px;
+}
+.acc_info p{
+    margin-bottom: -10px;
+}
+.acc_info #u_details{
+    line-height: 30px;
+    padding: 3px;
+}
+
+.acc_info:hover{
+    color: #3ef15c;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: ease 0.3s;
+    background-color: rgba(13, 75, 94, 0.938);
+}
+
+.acc_info #u_details:hover{
+    color: #3ef15c;
+}
+
+/* CSS for Food Search Section */
+
+.food-search{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 7% 0;
+    text-align: center;
+}
+
+.food-search input[id="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+/* .categories{
+    padding: 4% 0;
+}
+h2{
+    text-align: center;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+    color: white;
+} */
+
+
+/* CSS for Food Menu */
+#dynamic_res{
+    display: block;
+
+}
+
+#dynamic_res .listed{
+    list-style-type: none;
+}
+
+.food-menu{
+    padding: 4% 0;
+    text-align: center;
+}
+.food-menu-box{
+    width: 43%;
+    min-height: 3cm;
+    margin: 1%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+    backdrop-filter: blur(40px) brightness(130%); 
+    box-shadow: 0px 0px 5px 2px #666666f3;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.food-menu-img{
+    width: 4cm;
+    height: 4cm;
+    margin-top: 1px;
+    float: left;
+    justify-self: center;
+}
+.food-menu-img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: ease 0.3s;
+}
+
+.menu_img{
+    width: 4cm;
+    height: 3.5cm;
+}
+.food-menu-desc{
+    position:relative;
+    width: 60%;
+    float:right;
+    color: #fff;
+}
+
+.food-price{
+    font-size: 1rem;
+    margin: 2% 0;
+    color: #fff;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+    text-align: center;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    color: white;
+}
